@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankur Kundu - AI/ML Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #000;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        .section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 4rem 1rem;
+            position: relative;
+        }
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 1s ease-out;
+        }
+        .animate-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .project-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+        }
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+        }
+        .parallax-bg {
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+        .divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+            margin: 2rem 0;
+        }
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+            <h1 class="text-2xl font-bold">Sankur Kundu</h1>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white">About</a>
+                <a href="#education" class="text-gray-300 hover:text-white">Education</a>
+                <a href="#experience" class="text-gray-300 hover:text-white">Experience</a>
+                <a href="#projects" class="text-gray-300 hover:text-white">Projects</a>
+                <a href="#skills" class="text-gray-300 hover:text-white">Skills</a>
+                <a href="#contact" class="text-gray-300 hover:text-white">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="section bg-gradient-to-b from-gray-900 to-black parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1516321310763-2b8f3b1f2b61?q=80&w=2070')">
+        <div class="text-center animate-on-scroll max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-bold mb-4">Sankur Kundu</h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-6"> AI/ML Engineer | Production Infrastructure | Open-Source Contributor | Building the Future of Edge AI</p>
+            <p class="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">Building scalable AI systems that power innovation, from edge devices to cloud infrastructure.</p>
+            <a href="#contact" class="inline-block bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition">
+                <i class="fa-solid fa-envelope mr-2"></i>Get in Touch
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="max-w-5xl mx-auto animate-on-scroll">
+            <h2 class="text-4xl font-bold mb-6 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-6">
+    
+                <div>
+                    <p class="text-lg text-gray-300 leading-relaxed">
+                        I'm a Computer Science Engineering student at Institute of Engineering and Management Kolkata, specializing in AI/ML. My passion lies in creating high-impact solutions, from optimizing neural networks for TSMC's 3nm architecture to building microservices that handle 1,000+ users with zero downtime. With expertise in model compression, generative AI, and production ML infrastructure, I aim to deliver elegant, scalable systems that solve real-world problems.
+                    </p>
+                    <p class="text-lg text-gray-300 leading-relaxed mt-4">
+                        As a hackathon leader securing 2nd place and mentor to 15+ junior developers, I thrive in collaborative environments where technical depth meets ambitious vision.
+                    </p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="text-center">
+                <a href="#projects" class="text-gray-300 hover:text-white underline">Explore My Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-gray-900 parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1516321310763-2b8f3b1f2b61?q=80&w=2070')">
+        <div class="max-w-5xl mx-auto animate-on-scroll">
+            <h2 class="text-4xl font-bold mb-6 text-center">Education</h2>
+            <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                <i class="fa-solid fa-graduation-cap text-3xl mr-4 mt-1 text-gray-300"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold">Bachelor of Technology in Computer Science & Engineering (Artificial Intelligence and Machine Learning)</h3>
+                    <p class="text-lg text-gray-300">Institute of Engineering & Management, Kolkata | 2022 – 2026</p>
+                    <ul class="list-disc list-inside text-gray-400 mt-2">
+                        <li>Coursework: Distributed Systems, Neural Networks, Deep Learning, Algorithm Design</li>
+                        <li>Leadership: Competitive hackathon 2nd place, mentored 15+ junior developers</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="text-center">
+                <a href="#experience" class="text-gray-300 hover:text-white underline">View My Experience</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="max-w-5xl mx-auto animate-on-scroll">
+            <h2 class="text-4xl font-bold mb-6 text-center">Experience</h2>
+            <div class="flex items-start bg-gray-800 p-6 rounded-lg">
+                <i class="fa-solid fa-briefcase text-3xl mr-4 mt-1 text-gray-300"></i>
+                <div>
+                    <h3 class="text-2xl font-semibold">Software Development Engineer Intern</h3>
+                    <p class="text-lg text-gray-300">BlueStock Fintech | April 2025 – July 2025</p>
+                    <p class="text-lg text-gray-300 leading-relaxed mt-4">
+                        At BlueStock Fintech, I discovered that the most elegant code means nothing without real impact. While architecting microservices that achieved zero downtime for 1,000+ users, I learned that exceptional engineering happens at the intersection of technical excellence and user value. The 40% performance improvement I delivered wasn't just about faster queries—it was about creating experiences that users could depend on. My work spans the full spectrum of modern AI systems: from compressing neural networks to run efficiently on edge hardware, to building generative models that achieve 92% realism scores in medical imaging. Each project has reinforced my belief that the most compelling technology emerges when you combine deep technical understanding with genuine curiosity about solving meaningful problems. The open-source contributions I've made to TensorFlow Lite—now running in production systems worldwide—taught me something invaluable: great engineering creates ripple effects that extend far beyond your immediate team.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-400 mt-4">
+                        <li>Architected fault-tolerant microservices supporting 1,000+ simultaneous users with zero downtime</li>
+                        <li>Enhanced query performance by 40% through Redis caching and MySQL indexing optimization</li>
+                        <li>Built high-throughput transaction processor managing 10,000+ daily financial operations</li>
+                    </ul>
+                    <p class="text-gray-400 mt-4">Technologies: Redis, MySQL, FastAPI, Docker</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="text-center">
+                <a href="#skills" class="text-gray-300 hover:text-white underline">See My Technical Skills</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-gray-900">
+        <div class="max-w-6xl mx-auto animate-on-scroll">
+            <h2 class="text-4xl font-bold mb-6 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="project-card p-6 rounded-lg">
+                    <i class="fa-solid fa-microchip text-3xl mb-2"></i>
+                    <h3 class="text-xl font-semibold">AI Model Compression for TSMC 3nm Edge Deployment | June - July 2025</h3>
+                    <p class="text-gray-400 mt-2">Optimized MobileNetV3 for disaster classification via 50% sparsity, INT8 quantization, knowledge distillation. Delivered inference latency under 100ms on 5W power budget maintaining 94% classification accuracy.</p>
+                    <p class="text-gray-500 text-sm mt-2">Stack: PyTorch, ONNX Runtime, ARM NEON SIMD, CUDA</p>
+                </div>
+                <div class="project-card p-6 rounded-lg">
+                    <i class="fa-solid fa-code text-3xl mb-2"></i>
+                    <h3 class="text-xl font-semibold">Multi-Modal Code Intelligence Platform | April - May 2025</h3>
+                    <p class="text-gray-400 mt-2">Developed AI-powered analysis system supporting Python, JavaScript, Java, C++ with contextual insights. Implemented smart completion and documentation generation reaching 85% developer acceptance rate.</p>
+                    <p class="text-gray-500 text-sm mt-2">Stack: CodeT5+, StarCoder2, Fast API, Chroma DB, Neo4j</p>
+                </div>
+                <div class="project-card p-6 rounded-lg">
+                    <i class="fa-solid fa-server text-3xl mb-2"></i>
+                    <h3 class="text-xl font-semibold">Production ML Serving Infrastructure | February - March 2025</h3>
+                    <p class="text-gray-400 mt-2">Built scalable inference engine processing 5,000+ concurrent requests at 50ms response latency. Integrated caching and auto-scaling reducing infrastructure costs by 40%.</p>
+                    <p class="text-gray-500 text-sm mt-2">Stack: FastAPI, Kubernetes, Docker, AWS ECS, Prometheus</p>
+                </div>
+                <div class="project-card p-6 rounded-lg">
+                    <i class="fa-solid fa-lungs text-3xl mb-2"></i>
+                    <h3 class="text-xl font-semibold">Generative AI for Synthetic Medical Imaging | January - February 2025</h3>
+                    <p class="text-gray-400 mt-2">Developed Denoising Diffusion Probabilistic Model generating synthetic X-ray images for rare lung diseases. Achieved 92% realism score (FID <10) boosting downstream classifier accuracy by 8%.</p>
+                    <p class="text-gray-500 text-sm mt-2">Stack: PyTorch, GCP Vertex AI, CUDA acceleration, medical imaging datasets</p>
+                </div>
+                <div class="project-card p-6 rounded-lg">
+                    <i class="fa-solid fa-tools text-3xl mb-2"></i>
+                    <h3 class="text-xl font-semibold">Predictive Maintenance IoT Pipeline | December 2024 - January 2025</h3>
+                    <p class="text-gray-400 mt-2">Engineered end-to-end ML solution predicting equipment failures with 93% accuracy on 50K+ daily events. Deployed real-time LSTM ensemble maintaining response times under 100ms via GCP streaming architecture.</p>
+                    <p class="text-gray-500 text-sm mt-2">Stack: TensorFlow, GCP Vertex AI, BigQuery, Pub/Sub, Redis, WebSocket</p>
+                </div>
+                <div class="project-card p-6 rounded-lg">
+                    <i class="fa-solid fa-code-branch text-3xl mb-2"></i>
+                    <h3 class="text-xl font-semibold">Open-Source Contribution: TensorFlow Lite Optimization</h3>
+                    <p class="text-gray-400 mt-2">Contributed INT8 quantization algorithms delivering 4x model compression plus 2.3x ARM speedup. Impact: 500+ GitHub stars, adopted by 12+ production systems globally.</p>
+                    <p class="text-gray-500 text-sm mt-2">Stack: TensorFlow</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="text-center">
+                <a href="https://github.com/SankurTW" class="text-gray-300 hover:text-white underline">View More on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="max-w-5xl mx-auto animate-on-scroll">
+            <h2 class="text-4xl font-bold mb-6 text-center">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold"><i class="fa-solid fa-code mr-2"></i>Languages</h3>
+                    <p class="text-gray-400">Python, C++, Java, JavaScript, Go, SQL, R</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold"><i class="fa-solid fa-brain mr-2"></i>AI/ML</h3>
+                    <p class="text-gray-400">TensorFlow, PyTorch, CUDA, Scikit-learn, ONNX, Hugging Face Transformers</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold"><i class="fa-solid fa-cloud mr-2"></i>Cloud</h3>
+                    <p class="text-gray-400">AWS (Lambda, SageMaker, ECS), GCP (Vertex AI, BigQuery, Pub/Sub), Kubernetes, Docker</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold"><i class="fa-solid fa-database mr-2"></i>Data Systems</h3>
+                    <p class="text-gray-400">PostgreSQL, Redis, MongoDB, Apache Kafka, Chroma DB, Neo4j</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold"><i class="fa-solid fa-cogs mr-2"></i>Frameworks</h3>
+                    <p class="text-gray-400">Fast API, Django, Node.js, React.js, Spring Boot</p>
+                </div>
+                <div class="bg-gray-800 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold"><i class="fa-solid fa-tools mr-2"></i>DevOps</h3>
+                    <p class="text-gray-400">Git, Terraform, Jenkins, Prometheus, Apache Spark</p>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="text-center">
+                <a href="#contact" class="text-gray-300 hover:text-white underline">Connect to Discuss My Expertise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section parallax-bg" style="background-image: url('https://images.unsplash.com/photo-1516321310763-2b8f3b1f2b61?q=80&w=2070')">
+        <div class="contact-container animate-on-scroll">
+            <h2 class="text-4xl font-bold mb-6">Get in Touch</h2>
+            <p class="text-lg text-gray-300 mb-6">Interested in collaborating or learning more about my work? Let's build something remarkable together!</p>
+            <div class="contact-item">
+                <i class="fa-solid fa-envelope text-gray-300"></i>
+                <p class="text-gray-400">Email: <a href="mailto:sankur.kundu.tw@gmail.com" class="underline">sankur.kundu.tw@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-solid fa-phone text-gray-300"></i>
+                <p class="text-gray-400">Phone: (+91) 9776194201</p>
+            </div>
+            <div class="contact-item">
+                <i class="fa-brands fa-linkedin text-gray-300"></i>
+                <p class="text-gray-400">LinkedIn: <a href="https://www.linkedin.com/in/sankur-kundu/" class="underline">sankur-kundu</a></p>
+            </div>
+            <a href="https://github.com/SankurTW" class="inline-block bg-white text-black px-6 py-3 rounded-full font-semibold hover:bg-gray-200 transition mt-4">
+                <i class="fa-brands fa-github mr-2"></i>View My GitHub
+            </a>
+        </div>
+    </section>
+
+    <script>
+        // Smooth scroll for nav links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.animate-on-scroll').forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+</html>
